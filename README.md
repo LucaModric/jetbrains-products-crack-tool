@@ -1,1 +1,4 @@
-# jetbrains-products-crack-tool
+
+
+# 简介
+基于ja-netfilter整理的一个可自定义激活码期限的工具类；源码来自网络，仅个人学习而用！

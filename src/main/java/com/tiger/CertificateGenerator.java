@@ -21,6 +21,9 @@ import java.security.Security;
 import java.security.cert.X509Certificate;
 import java.util.Date;
 
+/**
+ * 第1步，生成证书
+ */
 public class CertificateGenerator {
 
     public static void genCrtKey() throws Exception {

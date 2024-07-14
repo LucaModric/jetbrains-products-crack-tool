@@ -21,6 +21,10 @@ import java.util.Base64;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * 第3步，生成激活码
+ *
+ */
 public class LicenseGenerator {
     public static final String[] DEFAULT_CODES = {
             "II", "PSI", "PS", "AC", "DB", "RM", "WS", "RD", "CL", "PC", "GO", "DS", "DC", "DPN", "DM",

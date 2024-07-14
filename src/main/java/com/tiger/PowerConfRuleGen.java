@@ -9,6 +9,9 @@ import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.security.interfaces.RSAPublicKey;
 
+/**
+ * 第2步，生成power.conf节点数据
+ */
 public class PowerConfRuleGen {
 
     private static final String ROOT_CERTIFICATE = "-----BEGIN CERTIFICATE-----\n" +

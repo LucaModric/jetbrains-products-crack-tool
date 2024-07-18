@@ -57,6 +57,7 @@ public class LicenseGenerator {
             "PDATAGRAPH", "POXYJSONSCHGEN", "PSPEECHTOTEXT", "PMYSQLPROXY", "PFASTREQUEST", "PMYBATISHELPER", "PREDIS",
             "RSC",   "RSF",  "RC",   "RS0", "RSV",  "RSU", "DP", "PDB",
             "PWS",  "PCWMP", "PPS", "PGO", "PPC", "PRB", "PSW", "RS"
+        ,"AIP"
     };
 
     public static final String[] pycodes = {
@@ -87,10 +88,12 @@ public class LicenseGenerator {
         // 自己修改 license内容
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
+        // 激活码激活时限，100年
         calendar.add(Calendar.YEAR, 100);
         String date = DateUtil.formatDate(calendar.getTime());
         codes = codes == null ? DEFAULT_CODES : codes;
-        String licenseId = "HuaGCS";
+        // licenseId随便写
+        String licenseId = "tiger";
         LicensePart licensePart = new LicensePart(licenseId, codes, date);
         byte[] licensePartBytes = licensePart.toString().getBytes(StandardCharsets.UTF_8);
         String licensePartBase64 = Base64.getEncoder().encodeToString(licensePartBytes);

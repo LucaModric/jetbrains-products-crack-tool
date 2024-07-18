@@ -39,7 +39,7 @@ public class CertificateGenerator {
         X500Name subjectName = new X500Name("CN=Novice-from-2024-01-19");
         BigInteger serialNumber = BigInteger.valueOf(System.currentTimeMillis());
         Date notBefore = new Date(System.currentTimeMillis() - 24 * 60 * 60 * 1000); // Yesterday
-        Date notAfter = new Date(System.currentTimeMillis() + 3650L * 24 * 60 * 60 * 1000); // 10 years later
+        Date notAfter = new Date(System.currentTimeMillis() + 365 * 100L * 24 * 60 * 60 * 1000); // 100 years later
 
         SubjectPublicKeyInfo subPubKeyInfo = SubjectPublicKeyInfo.getInstance(publicKey.getEncoded());
         X509v3CertificateBuilder certBuilder = new JcaX509v3CertificateBuilder(

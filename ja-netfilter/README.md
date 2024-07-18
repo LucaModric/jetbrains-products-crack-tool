@@ -23,11 +23,8 @@ EQUAL,445723476679.....这个就是PowerConfRuleGen生成的数据
 ```
 
 ### 4.运行LicenseGenerator拿到激活码
-如果出错，记得把读取ca.key和ca.crt的地方替换成你第2步设置的路径，拿到激活码去idea以激活码的形式激活。如果提示
- Specified activation code is not applicable to this product,则是入参中的codes不对，可以在网上找激活码，提取其中的code。
- 比如这个网页提供的激活码：[Pycharm激活码](https://www.bilibili.com/read/cv34966236/?jump_opus=1),以“-”分隔的第二段里
- 就有code，用base64解码，解码后是一个json字符串，再格式化一下，如下,其中products中的那些code对应的值，就是
- 需要的code,整理出来再运行LicenseGenerator
+如果出错，记得把读取ca.key和ca.crt的地方替换成你第2步设置的路径，拿到激活码去idea以激活码的形式激活。如果提示 Specified activation code is not applicable to this product,则是入参中的codes不对，可以在网上找激活码，提取其中的code。 比如这个网页提供的激活码：[Pycharm激活码](https://www.bilibili.com/read/cv34966236/?jump_opus=1),以“-”分隔的第二段里就有code，用base64解码，解码后是一个json字符串，再格式化一下，如下,其中products中的那些code对应的值，就是 需要的code,整理出来再运行LicenseGenerator
+
  ```
  {
      "licenseId": "9H1390TRAK",
@@ -202,9 +199,4 @@ EQUAL,445723476679.....这个就是PowerConfRuleGen生成的数据
  - jetbra-100.zip直接使用“激活码.txt”里的激活码，默认激活期限100年。
  - 使用说明参考压缩包里的“说明.docx”
  
- ## 备注
- 本来打算用python写一个exe的，也就不到10M,原网址里，有人写了go的版本，有人写了python的版本，python的版本我拿去运行了下，只能支持idea,不支持pycharm,
- 对比发现，LicenseGenerator生成的以“-”分隔的4段数据，对同一份证书和密钥而言，java和python第3,4段数据是
- 不同的，第4段我改了下代码，可以与java一致，但第3段用到rsa加密的数据没法做到一致，查了下说是java和python的sha1算法底层实现
- 不一致，所以加密相同的内容结果会不一致，那就没则了，会go的可以整理出一个exe,java打包成exe实在太。。。。。。。
- 
+

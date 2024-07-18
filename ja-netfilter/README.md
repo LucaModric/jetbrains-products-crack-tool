@@ -197,6 +197,7 @@ EQUAL,445723476679.....这个就是PowerConfRuleGen生成的数据
  如果不想跑上面的代码，可以直接使用ja-netfilter下的压缩包文件。
  - jetbra.zip 配合https://3.jetbra.in/ 提供的激活码使用，默认显示的激活期限是2年；
  - jetbra-100.zip直接使用“激活码.txt”里的激活码，默认激活期限100年。
+ - jetbra-py.zip,利用jetbrains-products-crack-tool.exe生成激活码，可自定义ide和插件的code
  - 使用说明参考压缩包里的“说明.docx”
  
 
